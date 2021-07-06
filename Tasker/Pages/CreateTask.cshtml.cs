@@ -14,7 +14,7 @@ namespace Tasker.Pages
         private ApplicationDbContext _context { get; set; }
         public CreateTaskModel(ApplicationDbContext context)
         {
-
+            _context = context;
         }
 
         public void OnGet()
