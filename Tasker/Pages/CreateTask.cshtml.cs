@@ -11,6 +11,7 @@ namespace Tasker.Pages
     {
         [BindProperty]
         public Task NewTask { get; set; }
+
         private ApplicationDbContext _context { get; set; }
         public CreateTaskModel(ApplicationDbContext context)
         {
@@ -20,6 +21,7 @@ namespace Tasker.Pages
         public void OnGet()
         {
         }
+
         public IActionResult OnPost()
         {
             _context.Tasks.Add(NewTask);
