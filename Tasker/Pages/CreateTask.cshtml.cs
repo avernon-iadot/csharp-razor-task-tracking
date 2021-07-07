@@ -12,7 +12,7 @@ namespace Tasker.Pages
         [BindProperty]
         public Task NewTask { get; set; }
 
-        private ApplicationDbContext _context { get; set; }
+        protected ApplicationDbContext _context { get; set; }
         public CreateTaskModel(ApplicationDbContext context)
         {
             _context = context;
